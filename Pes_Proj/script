@@ -1,0 +1,9 @@
+cd dreambigfront_main_updated
+npm i --legacy-peer-deps
+exec
+ nohup npm start
+mv package.json tempPkg
+mv pkgfile package.json
+mv tempPkg pkgfile
+exec
+ nohup npm start
